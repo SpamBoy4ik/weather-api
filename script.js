@@ -101,3 +101,16 @@ for (const btn of fastWeatherBtns) {
         getForecast(btn.getAttribute('lat'), btn.getAttribute('lon'), forecastsDiv)
     })
 }
+
+
+const partyBtn = document.getElementById('party-btn');
+partyBtn.addEventListener('click', function() {
+    document.body.style.backgroundSize = '10vh';
+    document.body.style.backgroundImage ='url(images/cat-dance.gif)';
+})
+
+const partyImg = document.getElementById('party-img');
+partyImg.addEventListener('click', function() {
+    document.body.style.backgroundSize = 'contain';
+    document.body.style.backgroundImage ='url(images/cat-dance.gif)';
+})

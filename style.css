@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 body {
@@ -117,3 +118,10 @@ input {
     content: '°C';
 }
 
+#party-img {
+    cursor: pointer;
+}
+
+#party-btn {
+    font-size: 20px;
+}
