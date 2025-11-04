@@ -12,35 +12,37 @@
 </head>
 <body>
     <div class="container">
+        <div id="bar">
+            <button lat="52.52188730080002" lon="13.409625548754203" class="fast-weather-city">Берлин</button>
+            <button lat="25.212057632427346" lon="55.26455532664457" class="fast-weather-city">Дубай</button>
+            <button lat="51.50374306671055" lon="-0.1201457014324201" class="fast-weather-city">Лондон</button>
+            <button lat="53.90039281093435" lon="27.55216789622636" class="fast-weather-city">Минск</button>
+            <button lat="55.74108395690176" lon="37.61035891254995" class="fast-weather-city">Москва</button>
+            <button lat="40.716283472285525" lon="-74.00560798902167" class="fast-weather-city">Нью-Йорк</button>
+            <button lat="48.85837378526772" lon="2.350808604821538" class="fast-weather-city">Париж</button>
+            <button lat="41.90433204785101" lon="12.478310407301654" class="fast-weather-city">Рим</button>
+            <button lat="41.01297633705906" lon="28.98401757226958" class="fast-weather-city">Стамбул</button>
+            <button lat="35.7151092448053" lon="139.79986102226553" class="fast-weather-city">Токио</button>
+        </div>
         <div id="weather-inputs-div">
             <div class="inputs-div-left">
-                <h1>Погода</h1>
+                <h1>Погода за 1.5с</h1>
                 <div id="inputs-divs">
-                    <form action="">
-                        <div class="input-div">
-                            <p>Широта:</p>
-                            <input type="number" id="latitude" min="-90" max="90" step="0.000001" required>
-                        </div>
-                        <div class="input-div">
-                            <p>Долгота:</p>
-                            <input type="number" id="longitude" min="-180" max="180" step="0.000001" required>
-                        </div>
-                        <button id="show-forecast">Показать погоду</button>
-                    </form>
+                    <div class="input-div">
+                        <p>Широта:</p>
+                        <input type="number" id="latitude" min="-90" max="90" step="0.000001">
+                    </div>
+                    <div class="input-div">
+                        <p>Долгота:</p>
+                        <input type="number" id="longitude" min="-180" max="180" step="0.000001">
+                    </div>
+                    <button id="show-forecast">Показать погоду</button>
                 </div>
             </div>
             <img src="images/cat-dance.gif">
+            
         </div>
-        <div id="forecasts">
-            <div class="forecast">
-                <div class="forecast-left">
-                    <h2 class="city-name">Название города</h2>
-                    <p class="temperature-p">Температура: <span class="temperature"></span></p>
-                    <p class="weather-description">Ясно</p>
-                </div>
-                <img src="" class="weather-img">
-            </div>
-        </div>
+        <div id="forecasts"></div>
     </div>
     <script src="script.js"></script>
 </body>

@@ -13,21 +13,43 @@ h1 {
     margin-bottom: 15px;
 }
 
+button {
+    cursor: pointer;
+}
+
 button,
 input {
     padding: 5px;
+    font-size: 16px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
     margin: 0 auto;
     width: 90%;
     height: 100vh;
     border: 1px solid black;
     border-top: none;
     border-bottom: none;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+#bar {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+#bar button {
+    width: 7vw;
 }
 
 #weather-inputs-div {
@@ -39,16 +61,13 @@ input {
     padding: 30px;
     border: 1px solid black;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.712);
 }
 
 #inputs-divs {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-#inputs-divs button {
-    width: 8vw;
 }
 
 .input-div {
@@ -61,14 +80,37 @@ input {
     width: 10vw;
 }
 
+#show-forecast {
+    width: 11vw;
+}
+
+
 .forecast {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     padding: 50px;
     border: 1px solid black;
     border-radius: 5px;
     width: fit-content;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+.forecast-left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 40px;
+}
+
+.forecast-left h2 {
+    font-size: 60px;
+    margin-bottom: 1px;
+}
+
+.weather-img {
+    height: 6vh;
 }
 
 .temperature::after {
