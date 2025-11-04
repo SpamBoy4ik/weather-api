@@ -1,5 +1,5 @@
 function getForecast(latitude, longitude, parentDiv) {
-    const url = `https://api.weatherbit.io/v2.0/current?lang=ru&lat=${latitude}&lon=${longitude}&key=6d4878b83fcf4b0e930141563796aeb6`;
+    const url = `https://api.weatherbit.io/v2.0/current?lang=ru&lat=${latitude}&lon=${longitude}&key=`;
     let forecast = null
     fetch(url)
         .then(responce => responce.json())
