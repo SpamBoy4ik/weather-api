@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Погода</title>
+</head>
+<body>
+    <div class="container">
+        <div id="weather-inputs-div">
+            <div class="inputs-div-left">
+                <h1>Погода</h1>
+                <div id="inputs-divs">
+                    <form action="">
+                        <div class="input-div">
+                            <p>Широта:</p>
+                            <input type="number" id="latitude" min="-90" max="90" step="0.000001" required>
+                        </div>
+                        <div class="input-div">
+                            <p>Долгота:</p>
+                            <input type="number" id="longitude" min="-180" max="180" step="0.000001" required>
+                        </div>
+                        <button id="show-forecast">Показать погоду</button>
+                    </form>
+                </div>
+            </div>
+            <img src="images/cat-dance.gif">
+        </div>
+        <div id="forecasts">
+            <div class="forecast">
+                <div class="forecast-left">
+                    <h2 class="city-name">Название города</h2>
+                    <p class="temperature-p">Температура: <span class="temperature"></span></p>
+                    <p class="weather-description">Ясно</p>
+                </div>
+                <img src="" class="weather-img">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

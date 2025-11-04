@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+button,
+input {
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 auto;
+    width: 90%;
+    height: 100vh;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom: none;
+}
+
+#weather-inputs-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 50%;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#inputs-divs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#inputs-divs button {
+    width: 8vw;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.input-div input {
+    width: 10vw;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.temperature::after {
+    content: '°C';
+}
+
